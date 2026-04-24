@@ -5,18 +5,57 @@
   <style>
     body {
       margin: 0;
-      display: grid;
-      place-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       min-height: 100vh;
       background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
     }
-    img {
+
+    .main-image {
       max-width: 100%;
-      max-height: 100vh;
+      max-height: 80vh;
+      margin-top: 20px;
+    }
+
+    .qr-container {
+      display: flex;
+      gap: 40px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .qr-box {
+      text-align: center;
+    }
+
+    .qr-box img {
+      width: 200px;
+      height: auto;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <img src="image.png" alt="My image">
+
+  <!-- Main image -->
+  <img src="image.png" alt="Main image" class="main-image">
+
+  <!-- QR Codes -->
+  <div class="qr-container">
+    <div class="qr-box">
+      <div>Scan to text Laureta:</div>
+      <img src="laureta.png" alt="Laureta QR">
+    </div>
+
+    <div class="qr-box">
+      <div>Scan to text Lenka:</div>
+      <img src="lenka.png" alt="Lenka QR">
+    </div>
+  </div>
+
 </body>
 </html>
