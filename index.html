@@ -9,8 +9,8 @@
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      background: #ffffff; /* changed to white */
-      color: #000000;      /* changed to black text */
+      background: #ffffff;
+      color: #000000;
       font-family: Arial, sans-serif;
     }
 
@@ -20,16 +20,28 @@
       margin-top: 20px;
     }
 
+    .headline {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 30px;
+    }
+
     .qr-container {
       display: flex;
       gap: 40px;
-      margin-top: 30px;
+      margin-top: 20px;
       flex-wrap: wrap;
       justify-content: center;
     }
 
     .qr-box {
       text-align: center;
+    }
+
+    .qr-label {
+      font-size: 18px;  /* increased size */
+      font-weight: 600;
     }
 
     .qr-box img {
@@ -44,15 +56,20 @@
   <!-- Main image -->
   <img src="image.png" alt="Main image" class="main-image">
 
+  <!-- Headline -->
+  <div class="headline">
+    Services offered in the Greater Toronto Area
+  </div>
+
   <!-- QR Codes -->
   <div class="qr-container">
     <div class="qr-box">
-      <div>Scan to text Laureta:</div>
+      <div class="qr-label">Scan to text Laureta</div>
       <img src="laureta.png" alt="Laureta QR">
     </div>
 
     <div class="qr-box">
-      <div>Scan to text Lenka:</div>
+      <div class="qr-label">Scan to text Lenka</div>
       <img src="lenka.png" alt="Lenka QR">
     </div>
   </div>
